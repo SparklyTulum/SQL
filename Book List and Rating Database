@@ -1,0 +1,12 @@
+-Book List and Rating Database
+
+CREATE TABLE books (id integer primary key, name text, rating integer);
+
+INSERT INTO books VALUES
+(1,'Ancient Egyptian Civilization', 1),
+(2, 'Greek Mythology',3),
+(3, 'The Psychology of Harry Potter',2)
+;
+
+-Display the Database ordered by ID
+SELECT * FROM books;
