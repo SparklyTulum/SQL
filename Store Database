@@ -1,0 +1,28 @@
+-Creating a table that includes items from a store with name, price and quantity of items  that are being sold in the store -
+
+CREATE TABLE store (id Integer Primary Key, name Text,item text, price integer, quantity integer);
+
+INSERT INTO store VALUES (1, " BELLA T SHIRT","TEES", 10, 20);
+INSERT INTO store VALUES (2, " Jasmine T SHIRT","TEES", 10, 20);
+INSERT INTO store VALUES (3, " Crop T SHIRT","TEES", 12, 20);
+INSERT INTO store VALUES (4, " Britney Jeans","Jeans ", 25, 20);
+INSERT INTO store VALUES (5, " Cristina Jeans","Jeans", 25, 20);
+INSERT INTO store VALUES (6, " Mandy Jeans","Jeans", 10, 25);
+INSERT INTO store VALUES (7, " Cozy Hoodie","Sweaters", 15, 20);
+INSERT INTO store VALUES (8, " Cropped Hoodie","Sweaters", 14, 20);
+
+INSERT INTO store VALUES (9, " BELLA Hoodie","Sweaters", 10, 20);
+INSERT INTO store VALUES (10, " Cher Cardigan","Sweaters", 15, 20);
+INSERT INTO store VALUES (11, "Short","Shorts", 13, 20);
+INSERT INTO store VALUES (12, " Summer Short","Shorts", 13, 20);
+INSERT INTO store VALUES (13, " AB Short","Shorts", 13, 20);
+INSERT INTO store VALUES (14, " Rave Purse","Purse", 10, 20);
+INSERT INTO store VALUES (15, " Every day Shoe","Shoes", 25, 20);
+
+-Displaying data as organized by price-
+
+Select * FROM store ORDER BY price;
+
+-Displaying the amount(sum) of items in the store-
+
+SELECT SUM(quantity) FROM store;
