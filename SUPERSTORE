@@ -1,0 +1,23 @@
+--In this project, we are gathering information of items purchased from this Superstore
+
+__Query one is asking for all the information of purchases to be displayed and ordered by price. 
+
+SELECT *
+FROM superstore
+ORDER By price;
+
+--What is the sum of all items bought?
+SELECT SUM(price)
+From superstore;
+
+
+--What is the total price of bought items in category Kitchen Supplies
+SELECT SUM(price),category
+FROM superstore
+WHERE category="Kitchen Supplies";
+
+--What'sa avg price of all items bought under kitchen supplies?
+
+SELECT AVG (price), category
+FROM superstore
+WHERE category="Kitchen Supplies";
