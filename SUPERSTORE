@@ -21,3 +21,47 @@ WHERE category="Kitchen Supplies";
 SELECT AVG (price), category
 FROM superstore
 WHERE category="Kitchen Supplies";
+
+
+Expanded List
+
+SELECT*
+FROM superstore
+ORDER BY price;
+
+SELECT SUM(price), category
+FROM superstore
+WHERE category="Furnishings";
+
+SELECT AVG (price), category 
+FROM superstore
+WHERE category="Appliances";
+
+
+SELECT AVG(price), category
+FROM superstore
+WHERE category="Electronics";
+
+SELECT SUM(stock_quantity), category
+FROM superstore
+WHERE category="Furnishings";
+
+SELECT SUM(stock_quantity), item_name
+FROM superstore
+WHERE item_name="Robot Vacuum Cleaner";
+
+SELECT item_name, category
+FROM superstore
+WHERE category="Kitchen Supplies";
+
+SELECT item_name, category 
+FROM superstore
+WHERE category="Furnishings";
+
+SELECT item_name, category 
+FROM superstore
+WHERE category="Appliances";
+
+
+
+
