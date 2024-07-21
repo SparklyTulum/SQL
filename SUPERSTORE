@@ -25,39 +25,48 @@ WHERE category="Kitchen Supplies";
 
 Expanded List
 
+
+-- The information of all items purchased ordered by price
 SELECT*
 FROM superstore
 ORDER BY price;
 
+--The total price of all items purchased in Furnishings Category
 SELECT SUM(price), category
 FROM superstore
 WHERE category="Furnishings";
 
+--The average price of items in category appliances
 SELECT AVG (price), category 
 FROM superstore
 WHERE category="Appliances";
 
-
+--The average price of items in category electronics
 SELECT AVG(price), category
 FROM superstore
 WHERE category="Electronics";
 
+--The sum number of category item furnishings in stock
 SELECT SUM(stock_quantity), category
 FROM superstore
 WHERE category="Furnishings";
 
+--The total number of Robot Vacuum Cleaners in stock.
 SELECT SUM(stock_quantity), item_name
 FROM superstore
 WHERE item_name="Robot Vacuum Cleaner";
 
+--The names of items under Kithen Supplies
 SELECT item_name, category
 FROM superstore
 WHERE category="Kitchen Supplies";
 
+--The items under Furnishings
 SELECT item_name, category 
 FROM superstore
 WHERE category="Furnishings";
 
+--The items under appliances
 SELECT item_name, category 
 FROM superstore
 WHERE category="Appliances";
