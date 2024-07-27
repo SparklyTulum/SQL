@@ -18,3 +18,10 @@ HAVING revenue>=400;
 
 SELECT industry, MAX(revenue) AS Max_revenue
 FROM fortune_companies;
+
+SELECT company_name,
+CASE WHEN maternity_leave_weeks>=12 THEN "MOM FRIENDLY"
+WHEN maternity_leave_weeks>=10 THEN  "ACCEPTABLE"
+ELSE "Abysmal"
+END AS "MOM_FRIENDLY_LEAVE"
+FROM fortune_companies;
