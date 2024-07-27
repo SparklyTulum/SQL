@@ -1,0 +1,20 @@
+SELECT company_name
+FROM fortune_companies
+WHERE paid_time_off_days>20 AND
+healthcare_benefits=1;
+
+SELECT company_name
+FROM fortune_companies
+WHERE healthcare_benefits=1;
+
+SELECT company_name, avg_employee_tenure
+FROM fortune_companies
+WHERE avg_employee_tenure>5;
+
+SELECT industry, revenue
+FROM fortune_companies
+GROUP BY revenue
+HAVING revenue>=400;
+
+SELECT industry, MAX(revenue) AS Max_revenue
+FROM fortune_companies;
